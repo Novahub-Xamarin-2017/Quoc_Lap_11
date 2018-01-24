@@ -12,7 +12,7 @@ namespace Demo
         Task<HttpResponseMessage> Login([Body] object user);
 
         [Get("/tweets")]
-        Task<List<TweetPost>> GetPosts();
+        Task<List<TweetPost>> GetPosts([Header("cookie")] string cookie);
 
         [Delete("/logout")]
         Task<HttpResponseMessage> Logout([Body] object user);

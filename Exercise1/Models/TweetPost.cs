@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Demo
+namespace Exercise1.Models
 {
     public class TweetPost
     {
