@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_linear_margin">20px</dimen>
+    <dimen name="edittext_margin_left">50px</dimen>
+    <dimen name="button_width">400px</dimen>
+</resources>
