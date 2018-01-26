@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">GitHubExplorer</string>
+  <string name="user_name">User Name</string>
+  <string name="login">Login</string>
+  <string name="email">Email</string>
+  <string name="bio">Bio</string>
+  <string name="company">Company</string>
+  <string name="repositories">Repositories</string>
+</resources>
