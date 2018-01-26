@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <ImageView
+        android:src="@drawable/gold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cover_size"
+        android:id="@+id/imageView1"
+        android:scaleType="fitXY" />
+    <TextView
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:gravity="center" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvCityRates" />
+</LinearLayout>

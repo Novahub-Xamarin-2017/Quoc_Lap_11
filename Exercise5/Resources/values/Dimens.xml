@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="cover_size">150dp</dimen>
+  <dimen name="textview_padding">15dp</dimen>
+  <dimen name="textview_rate_padding">20dp</dimen>
+  <dimen name="textview_rate_padding_top">5dp</dimen>
+</resources>
