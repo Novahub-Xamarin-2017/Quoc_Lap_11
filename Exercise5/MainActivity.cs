@@ -19,7 +19,7 @@ namespace Exercise5
 
         private readonly CityGoldRateAdapter adapter = new CityGoldRateAdapter();
 
-        private List<object> objects;
+        private List<object> cityGoldRates;
 
         private readonly ApiController apiController = new ApiController();
 
@@ -32,8 +32,8 @@ namespace Exercise5
             Cheeseknife.Inject(this);
 
             apiResponse = apiController.GetGoldRates();
-            objects = GenerateObjects(apiResponse.Ratelist.City);
-            adapter.CityGoldRates = objects;
+            cityGoldRates = GenerateObjects(apiResponse.Ratelist.City);
+            adapter.CityGoldRates = cityGoldRates;
             rvCityRates.SetLayoutManager(new LinearLayoutManager(this));
             rvCityRates.SetAdapter(adapter);
         }
