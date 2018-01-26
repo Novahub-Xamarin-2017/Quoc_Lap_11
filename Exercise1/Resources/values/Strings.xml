@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Twitter</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+</resources>

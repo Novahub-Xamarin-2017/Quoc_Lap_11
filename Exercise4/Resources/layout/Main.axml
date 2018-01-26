@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SearchView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:columnCount="2"
+        android:layout_margin="@dimen/grid_margin"
+        android:layout_gravity="center"
+        android:useDefaultMargins="true">
+        <TextView
+            android:text="@string/city_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView1" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvCityName"
+            android:layout_marginLeft="@dimen/text_view_margin_left" />
+        <TextView
+            android:text="@string/weather"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvWeather"
+            android:layout_marginLeft="@dimen/text_view_margin_left" />
+        <TextView
+            android:text="@string/temperature"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView5" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvTemperature"
+            android:layout_marginLeft="@dimen/text_view_margin_left" />
+        <TextView
+            android:text="@string/cloudliness"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView7" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvCloudliness"
+            android:layout_marginLeft="@dimen/text_view_margin_left" />
+        <TextView
+            android:text="@string/wind_speed"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView9" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvWindSpeed"
+            android:layout_marginLeft="@dimen/text_view_margin_left" />
+    </GridLayout>
+</LinearLayout>
