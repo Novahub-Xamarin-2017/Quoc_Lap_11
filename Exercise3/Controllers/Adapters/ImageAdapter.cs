@@ -7,16 +7,26 @@ namespace Exercise3.Controllers.Adapters
 {
     class ImageAdapter : RecyclerView.Adapter
     {
-        private readonly List<Image> images;
+        private List<Image> images;
 
-        public ImageAdapter(List<Image> images)
+        public List<Image> Images
         {
-            this.images = images;
+            get => images;
+            set
+            {
+                images = value; 
+                NotifyDataSetChanged();
+            }
+        }
+
+        public ImageAdapter()
+        {
+            images = new List<Image>();
         }
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            ((ImageViewHolder) holder).Image = images[position];
+            ((ImageViewHolder) holder).Image = Images[position];
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
@@ -26,6 +36,6 @@ namespace Exercise3.Controllers.Adapters
             return new ImageViewHolder(view);
         }
 
-        public override int ItemCount => images.Count;
+        public override int ItemCount => Images.Count;
     }
 }

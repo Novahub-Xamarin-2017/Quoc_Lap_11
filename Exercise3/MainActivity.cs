@@ -14,7 +14,7 @@ namespace Exercise3
         [InjectView(Resource.Id.rvPhotos)] private RecyclerView rvPhotos;
 
         private SearchView searchView;
-        private ImageAdapter adapter;
+        private readonly ImageAdapter adapter = new ImageAdapter();
         private GettyImageApiController apiController;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -24,13 +24,13 @@ namespace Exercise3
             SetContentView(Resource.Layout.Main);
             Cheeseknife.Inject(this);
             rvPhotos.SetLayoutManager(new LinearLayoutManager(this));
+            rvPhotos.SetAdapter(adapter);
             apiController = new GettyImageApiController();
 
             searchView = FindViewById<SearchView>(Resource.Id.searchView);
             searchView.QueryTextSubmit += (sender, e) =>
             {
-                adapter = new ImageAdapter(apiController.SearchImage(searchView.Query));
-                rvPhotos.SetAdapter(adapter);
+                adapter.Images = apiController.SearchImage(searchView.Query);
             };
         }
     }
