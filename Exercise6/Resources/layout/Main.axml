@@ -9,7 +9,6 @@
         android:layout_height="100dp"
         android:id="@+id/imageView1" />
     <TextView
-        android:text="Joint Stock Commercial Bank for Foreign Trade of Vietnam - Vietcombank"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
