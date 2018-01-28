@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+        <TextView
+            android:text="@string/gold_type"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvGoldType"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_columnWeight="2"
+            android:lines="2"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/textview_padding" />
+        <TextView
+            android:text="@string/buy"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:layout_columnWeight="1" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvBuy"
+            android:layout_columnWeight="1" />
+        <TextView
+            android:text="@string/sell"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView4"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvSell"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp" />
+    </GridLayout>
+</LinearLayout>

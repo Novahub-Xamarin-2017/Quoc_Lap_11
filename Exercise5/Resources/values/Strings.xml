@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Exercise5</string>
+  <string name="gold_type">Vàng nhẫn SJC 99,99 5p,1c,2c,5c</string>
+  <string name="buy">Mua vào</string>
+  <string name="sell">Bán ra</string>
+  <string name="title">Cong ty TNHH MTV Vang bac da quy Sai gon : Bang Ty gia vang SJC</string>
+</resources>
