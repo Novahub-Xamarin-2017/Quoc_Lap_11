@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/cardView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout1"
+        p1:layout_margin="@dimen/layout_margin">
+        <ImageView
+            p1:src="@drawable/ava"
+            p1:layout_width="match_parent"
+            p1:layout_height="@dimen/picture_size"
+            p1:id="@+id/image" />
+        <TextView
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/tvTitle"
+            p1:gravity="center" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
