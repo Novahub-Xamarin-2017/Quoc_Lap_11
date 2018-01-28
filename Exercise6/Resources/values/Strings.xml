@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Currency Trade Market</string>
+  <string name="currency_code">Currency Code</string>
+  <string name="currency_name">Currency Name</string>
+  <string name="buy">Buy</string>
+  <string name="transfer">Transfer</string>
+  <string name="sell">Sell</string>
+</resources>
